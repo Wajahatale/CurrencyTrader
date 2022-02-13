@@ -67,12 +67,12 @@ const App: FC = props => {
       mailhost: 'smtp.gmail.com',
       port: '465',
       ssl: true, // optional. if false, then TLS is enabled. Its true by default in android. In iOS TLS/SSL is determined automatically, and this field doesn't affect anything
-      username: 'wajahatalih93@gmail.com',
-      password: 'trick@treat',
+      username: 'youremailaddress',
+      password: 'your password',
       fromName: 'CurrencyTrader', // optional
       replyTo: 'Client', // optional
       recipients: user,
-      bcc: ['imran001122@yandex.com'], // optional
+      bcc: ['admin@email.com'], // optional
       subject: 'Sale in Progress',
       htmlBody:
         '<h1>Sale requested by:</h1>' +
@@ -92,12 +92,12 @@ const App: FC = props => {
       mailhost: 'smtp.gmail.com',
       port: '465',
       ssl: true, // optional. if false, then TLS is enabled. Its true by default in android. In iOS TLS/SSL is determined automatically, and this field doesn't affect anything
-      username: 'wajahatalih93@gmail.com',
-      password: 'trick@treat',
+      username: 'youremail',
+      password: 'yourpassword',
       fromName: 'CurrencyTrader', // optional
       replyTo: 'Client', // optional
       recipients: user,
-      bcc: ['imran001122@yandex.com'], // optional
+      bcc: ['admin@email.com'], // optional
       subject: 'Purchase in Progress',
       htmlBody:
         '<h1>Sale requested by:</h1>' +

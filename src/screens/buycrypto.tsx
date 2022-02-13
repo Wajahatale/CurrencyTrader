@@ -68,12 +68,12 @@ const App: FC = props => {
               mailhost: 'smtp.gmail.com',
               port: '465',
               ssl: true, // optional. if false, then TLS is enabled. Its true by default in android. In iOS TLS/SSL is determined automatically, and this field doesn't affect anything
-              username: 'wajahatalih93@gmail.com',
-              password: 'trick@treat',
+              username: 'youremail@gmail.com',
+              password: 'yourpassword',
               fromName: 'CurrencyTrader', // optional
               replyTo: 'Client', // optional
               recipients: user,
-              bcc: ['imran001122@yandex.com'], // optional
+              bcc: ['admin@email.com'], // optional
               subject: 'Purchase in Progress',
               htmlBody:
                 '<h1>Purchase requested by:</h1>' +
@@ -94,22 +94,6 @@ const App: FC = props => {
       ],
       {cancelable: false},
     );
-
-    // RNSmtpMailer.sendMail({
-    //     mailhost: "smtp.gmail.com",
-    //     port: "465",
-    //     ssl: true, // optional. if false, then TLS is enabled. Its true by default in android. In iOS TLS/SSL is determined automatically, and this field doesn't affect anything
-    //     username: "wajahatalih93@gmail.com",
-    //     password: "trick@treat",
-    //     fromName: "CurrencyTrader", // optional
-    //     replyTo: "Client", // optional
-    //     recipients: user,
-    //     bcc: ["imran001122@yandex.com"], // optional
-    //     subject: "Purchase in Progress",
-    //     htmlBody: "<h1>Purchase requested by:</h1>"+user+"<p>A request for the purchase of </p>"+amount+currency+"<p> has been recieved. Rate at the time of request :</p>",
-    //   })
-    //     .then(success => console.log(success))
-    //     .catch(err => console.log(err));
   };
 
   const buyBUSD = async () => {
@@ -121,12 +105,12 @@ const App: FC = props => {
         mailhost: 'smtp.gmail.com',
         port: '465',
         ssl: true, // optional. if false, then TLS is enabled. Its true by default in android. In iOS TLS/SSL is determined automatically, and this field doesn't affect anything
-        username: 'wajahatalih93@gmail.com',
-        password: 'trick@treat',
+        username: 'youremail',
+        password: 'yourpassword',
         fromName: 'CurrencyTrader', // optional
         replyTo: 'Client', // optional
         recipients: user,
-        bcc: ['imran001122@yandex.com'], // optional
+        bcc: ['admin@email.com'], // optional
         subject: 'Purchase in Progress',
         htmlBody:
           '<h1>Purchase requested by:</h1>' +
@@ -141,57 +125,6 @@ const App: FC = props => {
         )
         .catch(err => console.log(err));
     }
-    // Alert.alert(
-    //     'Are you sure you want to Buy '+amount+' BUSD ?',
-    //     '',
-    //     [
-    //       {
-    //         text: 'Yes',
-    //         onPress: () => {RNSmtpMailer.sendMail({
-    //             mailhost: "smtp.gmail.com",
-    //             port: "465",
-    //             ssl: true, // optional. if false, then TLS is enabled. Its true by default in android. In iOS TLS/SSL is determined automatically, and this field doesn't affect anything
-    //             username: "wajahatalih93@gmail.com",
-    //             password: "trick@treat",
-    //             fromName: "CurrencyTrader", // optional
-    //             replyTo: "Client", // optional
-    //             recipients: user,
-    //             bcc: ["imran001122@yandex.com"], // optional
-    //             subject: "Purchase in Progress",
-    //             htmlBody: "<h1>Purchase requested by:</h1>"+user+"<p>A request for the purchase of </p>"+amount+currency+"<p> has been recieved.</p>",
-    //           })
-    //             .then(success => console.log(success))
-    //             .catch(err => console.log(err));}
-    //       },
-    //       {
-    //         text: 'No',
-    //         onPress: () => {}
-    //       }
-    //     ],
-    //     { cancelable: false }
-    //   );
-    // setCurrency('busd')
-    // RNSmtpMailer.sendMail({
-    //     mailhost: "smtp.gmail.com",
-    //     port: "465",
-    //     ssl: true, // optional. if false, then TLS is enabled. Its true by default in android. In iOS TLS/SSL is determined automatically, and this field doesn't affect anything
-    //     username: "wajahatalih93@gmail.com",
-    //     password: "trick@treat",
-    //     fromName: "CurrencyTrader", // optional
-    //     replyTo: "Client", // optional
-    //     recipients: user,
-    //     bcc: ["imran001122@yandex.com"], // optional
-    //     subject: "Purchase in Progress",
-    //     htmlBody: "<h1>Purchase requested by:</h1>"+user+"<p>A request for the purchase of </p>"+amount+currency+"<p> has been recieved.</p>"+filteredCoins.map(coin => {
-    //         if(coin.symbol=="busd"){
-
-    //             coins.price
-
-    //         }
-    //         })+"",
-    //   })
-    //     .then(success => console.log(success))
-    //     .catch(err => console.log(err));
   };
 
   return (
