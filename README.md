@@ -1,2 +1,2 @@
 # CurrencyTrader
-React Native mobile application for trading CryptoCurrency
+App for trading cryptocurrency
